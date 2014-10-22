@@ -1,0 +1,28 @@
+#
+# This file should be in .../cookbooks/database/templates/default/database.yml.erb
+#
+
+<%= @environment %>:
+  adapter:   <%= @adapter %>
+  database:  <%= @database %>
+  username:  <%= @username %>
+  password:  <%= @password %>
+  host:      <%= @host %>
+  reconnect: true
+
+
+<%= @second_connection %>:
+  adapter:   <%= @adapter %>
+  database:  <%= @second_database %>
+  username:  <%= @username %>
+  password:  <%= @password %>
+  host:      <%= @host %>
+  reconnect: true
+
+<%= @third_connection %>:
+  adapter:   <%= @adapter %>
+  database:  <%= @third_database %>
+  username:  <%= @username %>
+  password:  <%= @password %>
+  host:      <%= @host %>
+  reconnect: true
